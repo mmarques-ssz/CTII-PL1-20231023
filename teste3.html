@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <script language="JavaScript">
+        function botao(bot) {
+            document.frm.txtSaida.value += bot;
+        }
+    </script>
+    <style type="text/css">
+        input[type=button]
+        {
+            border-radius: 15px;  
+            width: 30px;
+            height: 30px;
+        }
+        input[type=text]
+        {
+            border-radius: 5px;  
+            width: 200px;
+        }
+        
+        </style>
+</head>
+<body>
+    <form name="frm">
+    <p>Saída: <input type="text" name="txtSaida" readonly></p>
+    <input type="button" name="btnUm" value="1" onClick="botao(1);">
+    <input type="button" name="btnDois" value="2" onClick="botao(2);"><br>
+    </form> 
+    
+</body>
+</html>
